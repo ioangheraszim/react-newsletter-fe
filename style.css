@@ -1,1 +1,173 @@
-/*# sourceMappingURL=style.css.map */
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+}
+.container .form-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  background-color: hsl(0, 0%, 100%);
+  width: 375px;
+}
+.container .form-sign .left-side {
+  padding: 2rem;
+}
+.container .form-sign .left-side ul li {
+  margin: 0;
+  padding: 1rem 0 1rem 2.5rem;
+  list-style: none;
+  background-image: url("./src/assets/images/icon-success.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+}
+.container .form-sign .left-side form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.container .form-sign .left-side form .my-labels {
+  display: flex;
+  justify-content: space-between;
+}
+.container .form-sign .left-side form .my-labels .error-label {
+  display: none;
+  color: hsl(4, 100%, 67%);
+}
+.container .form-sign .left-side form .my-labels label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.container .form-sign .left-side form input {
+  border-radius: 5px;
+  outline: 1px solid hsl(231, 7%, 60%);
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  /*
+      when error
+
+      color: $tomato;
+      outline: 1px solid $tomato;
+      background: $tomato;
+      background:hsla(4, 100%, 67%, .1)
+
+  */
+}
+.container .form-sign .left-side form .sub-btn {
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.container .form-sign .left-side form .sub-btn:hover {
+  background: linear-gradient(90deg, rgb(252, 69, 189) 0%, hsl(4, 100%, 67%) 100%);
+}
+.container .form-sign .right-side .desktop-illustration {
+  display: none;
+}
+@media (min-width: 950px) {
+  .container .form-sign .right-side .desktop-illustration {
+    display: block;
+  }
+}
+.container .form-sign .right-side .mobile-illustration {
+  display: block;
+}
+@media (min-width: 950px) {
+  .container .form-sign .right-side .mobile-illustration {
+    display: none;
+  }
+}
+.container .form-success {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 375px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+}
+.container .form-success .text-components {
+  text-align: left;
+}
+.container .form-success .text-components img {
+  margin-top: 7rem;
+  width: 18%;
+}
+.container .form-success .text-components h1 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.container .form-success .text-components p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+.container .form-success button {
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 0.35rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-top: 10rem;
+  width: 100%;
+}
+.container .form-success button:hover {
+  background: linear-gradient(90deg, rgb(252, 69, 189) 0%, hsl(4, 100%, 67%) 100%);
+}
+
+@media (min-width: 950px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 550px;
+    min-height: 100vh;
+  }
+  .container .form-sign {
+    flex-direction: row;
+    width: 950px;
+    border-radius: 1rem;
+  }
+  .container .form-sign .left-side {
+    padding: 5rem 2rem;
+    margin: 0 1rem;
+  }
+  .container .form-sign .left-side .text-content h1 {
+    font-size: 3.5rem;
+  }
+  .container .form-sign .left-side .text-content p {
+    padding: 1rem 0rem;
+  }
+  .container .form-sign .right-side {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
