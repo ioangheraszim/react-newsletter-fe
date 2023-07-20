@@ -135,7 +135,7 @@ body {
     }
 
     .form-success {
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -215,6 +215,49 @@ body {
 
             .right-side {
                 padding: 1.5rem;
+            }
+        }
+
+        .form-success {
+
+            @media(min-width: 950px){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 550px;
+                background-color: $white;
+                padding: 4rem;
+                border-radius: 30px;
+        
+                    .text-components {
+                        text-align: left;
+            
+                        img {
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            width: 15%;
+                        }
+            
+                        h1 {
+                            padding: 1rem 0;
+                            font-size: 3rem;
+                            font-weight: 700;
+                        }
+            
+                        p {
+                            font-weight: 400;
+                            font-size: 1rem;
+                            margin-bottom: 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+
+                    button {
+                        padding: 1.5rem;
+                        margin-top: 1.5rem;
+                    }
+            
             }
         }
 
