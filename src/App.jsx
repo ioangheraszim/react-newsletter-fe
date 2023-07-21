@@ -4,27 +4,33 @@ import FormSuccess from './components/FormSuccess';
 
 function App() {
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSubscribed(true);
+    setShowSuccess(true);
   };
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
+    setShowSuccess(false);
+  };
+
+  const handleDismiss = () => {
+    setShowSuccess(false);
   };
 
   return (
     <main className='container'>
-      {subscribed ? (
-        <FormSuccess email={email} />
-      ) : (
+      {/* Conditional rendering based on 'showSuccess' state */}
+      {!showSuccess ? (
         <FormSign
           email={email}
           handleEmailChange={handleEmailChange}
           handleSubmit={handleSubmit}
         />
+      ) : (
+        <FormSuccess email={email} handleDismiss={handleDismiss} />
       )}
     </main>
   );
