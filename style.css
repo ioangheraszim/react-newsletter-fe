@@ -49,6 +49,9 @@ body {
   display: none;
   color: hsl(4, 100%, 67%);
 }
+.container .form-sign .left-side form .my-labels .error-label.hidden {
+  display: block;
+}
 .container .form-sign .left-side form .my-labels label {
   color: hsl(234, 29%, 20%);
   font-weight: 700;
@@ -62,15 +65,12 @@ body {
   padding: 1rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  /*
-      when error
-
-      color: $tomato;
-      outline: 1px solid $tomato;
-      background: $tomato;
-      background:hsla(4, 100%, 67%, .1)
-
-  */
+}
+.container .form-sign .left-side form .error-input {
+  color: hsl(4, 100%, 67%);
+  outline: 1px solid hsl(4, 100%, 67%);
+  background: hsl(4, 100%, 67%);
+  background: hsla(4, 100%, 67%, 0.1);
 }
 .container .form-sign .left-side form .sub-btn {
   cursor: pointer;

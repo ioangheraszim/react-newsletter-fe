@@ -61,8 +61,12 @@ body {
                     justify-content: space-between;
 
                     .error-label {
-                        display: none;
-                        color: $tomato;
+                        display: none;                        
+                        color: $tomato;                                          
+                    }
+
+                    .error-label.hidden {
+                        display: block;
                     }
 
                     label {
@@ -83,17 +87,13 @@ body {
                     font-weight: 700;
                     font-family: 'Roboto', sans-serif;
 
-                   
+                }
 
-                    /*
-                        when error
-                        
-                        color: $tomato;
-                        outline: 1px solid $tomato;
-                        background: $tomato;
-                        background:hsla(4, 100%, 67%, .1)
-
-                    */
+                .error-input {
+                    color: $tomato;
+                    outline: 1px solid $tomato;
+                    background: $tomato;
+                    background:hsla(4, 100%, 67%, .1)
                 }
 
                 .sub-btn {
