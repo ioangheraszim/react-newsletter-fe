@@ -4,7 +4,7 @@ const RightSide = () => {
   return (
     <div className='right-side'>
       <img className='desktop-illustration' src="./images/illustration-sign-up-desktop.svg" alt="desktop illustration" />
-      <img className='mobile-illustration' src="./images/illustration-sign-up-mobile.svg" alt="mobile illustration" />
+      <img className='mobile-illustration' src="./public/images/illustration-sign-up-mobile.svg" alt="mobile illustration" />
     </div>
   );
 };
