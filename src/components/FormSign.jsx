@@ -1,11 +1,10 @@
-import React from "react";
 import RightSide from "./RightSide";
 import LeftSide from "./LeftSide";
 
 const FormSign = ({ email, handleEmailChange, handleSubmit }) => {
   return (
-    <div className='form-sign'>
-      <LeftSide 
+    <div className="form-sign">
+      <LeftSide
         header="Stay updated!"
         para="Join 60,000+ product managers receiving monthly updates on:"
         liOne="Product discovery and building what matters"

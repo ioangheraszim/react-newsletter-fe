@@ -1,10 +1,18 @@
-import React from "react";
-
+import desktopIllustration from "../../public/images/illustration-sign-up-desktop.svg";
+import mobileIllustration from "../../public/images/illustration-sign-up-mobile.svg";
 const RightSide = () => {
   return (
-    <div className='right-side'>
-      <img className='desktop-illustration' src="./images/illustration-sign-up-desktop.svg" alt="desktop illustration" />
-      <img className='mobile-illustration' src="./public/images/illustration-sign-up-mobile.svg" alt="mobile illustration" />
+    <div className="right-side">
+      <img
+        className="desktop-illustration"
+        src={desktopIllustration}
+        alt="desktop illustration"
+      />
+      <img
+        className="mobile-illustration"
+        src={mobileIllustration}
+        alt="mobile illustration"
+      />
     </div>
   );
 };
